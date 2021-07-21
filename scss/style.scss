@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Hind Siliguri', sans-serif;
+  position: relative;
+  height: 100%;
+  background-color: rgb(228, 224, 219);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgb(204, 204, 204);
+  background-color: white;
+  button{
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+  }
+}
+
+
+.chat{
+  background-color: white;
+  padding: 50px 5px;
+  .message-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px 0;
+    span, p{
+      line-height: 1.1;
+    }
+    div{
+      padding: 3px 5px;
+    }
+  }
+  .myMess{
+    span{
+      align-self: flex-end;
+    }
+    div{
+      border-radius: 4px;
+      border-bottom-right-radius: unset;
+      background-color: #0980FF;
+      color: white;
+      align-self: flex-end;
+    }
+  }
+  .messageItem{
+    span{
+      align-self: flex-start;
+    }
+    div{
+      border-radius: 4px;
+      border-bottom-left-radius: unset;
+      align-self: flex-start;
+      background-color: #E9E9EB;
+      color: black;
+    }
+  }
+}
+
+
+.input{
+  height: 40px;
+  background-color: rgb(235, 235, 235);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button{
+    background-color: #1D8DFE;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 20px;
+    margin-left: 5px;
+    border: none;
+  }
+  input{
+    height: 30px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .chat{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
